@@ -60,6 +60,25 @@
         margin-bottom: 20px;
       }
     }
+    /* FIX IMAGE SIZE */
+.city-slide-img {
+  width: 100%;
+  height: 320px; /* يمكنك تغييره 300 / 350 حسب التصميم */
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.city-slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* يحافظ على نفس الحجم بدون تمدد قبيح */
+  border-radius: 15px;
+  transition: transform .3s ease;
+}
+
+.city-slide-img img:hover {
+  transform: scale(1.05);
+}
   </style>
 
 </head>
@@ -162,54 +181,67 @@
         </div>
 
         <div class="swiper myCitiesSwiper">
-          <div class="swiper-wrapper">
+         <div class="swiper-wrapper">
 
-            <!-- Moscow -->
-            <div class="swiper-slide">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <div class="left-text-content">
-                    <h5>Moscow</h5>
-                    <p>The capital city known for top-ranked universities and vibrant student life.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="city-slide-img">
-                    <img src="assets/images/moscow.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
+  <!-- Moscow -->
+  <div class="swiper-slide">
+    <div class="row align-items-center">
+      <div class="col-md-6 d-flex justify-content-center align-items-center text-center">
+        <div class="left-text-content">
+          <h5 class="m-0">Moscow</h5>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="city-slide-img">
+          <img src="assets/images/moscow.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <!-- Volgograd -->
-            <div class="swiper-slide">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <div class="left-text-content">
-                    <h5>Volgograd</h5>
-                    <p>A calm and affordable city with strong academic programs.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="city-slide-img">
-                    <img src="assets/images/Volgograd.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
+  <!-- Volgograd -->
+  <div class="swiper-slide">
+    <div class="row align-items-center">
+      <div class="col-md-6 d-flex justify-content-center align-items-center text-center">
+        <div class="left-text-content">
+          <h5 class="m-0">Volgograd</h5>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="city-slide-img">
+          <img src="assets/images/Volgograd.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <!-- ADD FUTURE CITIES HERE -->
-          </div>
+  <!-- St. Petersburg -->
+  <div class="swiper-slide">
+    <div class="row align-items-center">
+      <div class="col-md-6 d-flex justify-content-center align-items-center text-center">
+        <div class="left-text-content">
+          <h5 class="m-0">St. Petersburg</h5>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="city-slide-img">
+          <img src="assets/images/St-Petersburg.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+</div>
+
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
 
         </div>
       </div>
 
 
       <!-- SPECIALIZATIONS -->
-      <div class="service-item last-service mt-5">
+      <!-- <div class="service-item last-service mt-5">
         <div class="row">
           <div class="col-lg-6">
             <div class="left-image"></div>
@@ -225,7 +257,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section>
@@ -259,15 +291,23 @@
   <script src="assets/js/swiper.js"></script>
 
   <script>
-    var swiperCities = new Swiper(".myCitiesSwiper", {
-      loop: true,
-      speed: 800,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
-    });
-  </script>
+  var swiperCities = new Swiper(".myCitiesSwiper", {
+    loop: true,
+    speed: 800,
+
+    autoplay: {
+      delay: 3000,  // كل 3 ثواني تتبدل سلايد
+      disableOnInteraction: false
+    },
+
+navigation: {
+  nextEl: ".swiper-button-next",
+  prevEl: ".swiper-button-prev"
+}
+
+  });
+</script>
+
 
 </body>
 

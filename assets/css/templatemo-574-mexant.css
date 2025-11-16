@@ -991,15 +991,15 @@ section.about-us .right-content {
   margin-left: 60px;
 }
 
-section.about-us .right-content h4 {
+section.about-us .right-content h5 {
   font-size: 22px;
   font-weight: 700;
   line-height: 40px;
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 section.about-us .right-content p {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 

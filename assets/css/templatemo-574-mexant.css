@@ -1213,7 +1213,7 @@ page heading
 */
 
 .page-heading {
-  background-image: url(../images/heading-bg.jpg);
+  background-image: url(../images/slide-x4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1225,6 +1225,9 @@ page heading
   font-size: 56px;
   color: #fff;
   font-weight: 700;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.523);
+  border-radius: 10px;
 }
 
 .page-heading .div-dec {

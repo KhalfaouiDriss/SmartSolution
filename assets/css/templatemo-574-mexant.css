@@ -1789,11 +1789,13 @@ body {
   }
   .testimonials .item img {
     max-width: 100px;
+    height: 30%;
     right: 50px;
     top: 35px;
     transform: translateY(0);
   }
   .testimonials .item {
     padding: 50px;
+    height: max-content;
   }
 }

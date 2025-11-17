@@ -292,23 +292,26 @@ body{
 <body>
 
 
-  <!-- HEADER -->
   <header class="header-area header-sticky">
     <div class="container">
-      <nav class="main-nav">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <ul class="nav">
 
-        <ul class="nav">
-
-          <li class="scroll-to-section"><a href="index.html" style="font-size: 18px;">Home</a></li>
-          <li><a href="our-services.html" style="font-size: 18px;">Our Services</a></li>
-          <li><a href="contact-us.html" style="font-size: 18px;">Contact Us</a></li>
-          <li class="nav-cta"><a class="orange-button" style="background-color: #2270b4;" href="contact-us.html"
-              aria-label="Contact us">submit application</a></li>
-        </ul>
-
-        <a class='menu-trigger'><span>Menu</span></a>
-
-      </nav>
+              <li class="scroll-to-section"><a href="index.html" style="font-size: 18px;">Home</a></li>
+              <li><a href="our-services.html" style="font-size: 18px;">Our Services</a></li>
+              <li><a href="contact-us.html" style="font-size: 18px;">Contact Us</a></li>
+              <li class="nav-cta"><a class="orange-button" style="background-color: #2270b4;" href="contact-us.html"
+                  aria-label="Contact us">submit application</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -617,7 +620,12 @@ body{
   <!-- JS -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
   <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <script>
     var swiperCities = new Swiper(".myCitiesSwiper", {

@@ -1217,7 +1217,16 @@ page heading
 */
 
 .page-heading {
-  background-image: url(../images/bn-4.jpg);
+  background-image: url(../images/bn-5.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 215px 0px 120px 0px;
+  text-align: center;
+}
+
+.page-heading-2 {
+  background-image: url(../images/slide-x4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1230,11 +1239,28 @@ page heading
   color: #fff;
   font-weight: 700;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.523);
+  background-color: #1e7adc6d;
   border-radius: 10px;
 }
 
 .page-heading .div-dec {
+  width: 80px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 20px auto 0 auto;
+}
+
+.page-heading-2 h2 {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px;
+  background-color: #1e7adc6d;
+  border-radius: 10px;
+}
+
+.page-heading-2 .div-dec {
   width: 80px;
   height: 6px;
   border-radius: 3px;

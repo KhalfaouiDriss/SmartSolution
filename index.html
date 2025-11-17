@@ -66,6 +66,10 @@ https://templatemo.com/tm-574-mexant
       padding: 5px 20px; background-color: rgba(45, 115, 201, 0.534); width: max-content; border-radius: 10px; 
     }
 
+    .nav-logo-mobile{
+      display: none;
+    }
+
     /* ===== MOBILE RESPONSIVE ===== */
     @media (max-width: 768px) {
       .cont {
@@ -91,7 +95,16 @@ https://templatemo.com/tm-574-mexant
         width: 90%;
         font-size: 32px !important;
       }
-
+      .nav-logo-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: centerx;
+        height: 60px;
+        width: 60px;
+      }
+      .nav-logo{
+        display: none;
+      }
     }
     .our-serv:hover{
       background-color: #2270b4;
@@ -111,6 +124,7 @@ https://templatemo.com/tm-574-mexant
       <div class="row">
         <div class="col-12">
           <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+            <div class="nav-logo-mobile" style="margin: 15px; padding: 10px; width: max-content;"><img src="assets/images/logo.png" alt=""></div>
             <!-- ***** Logo Start ***** -->
             <!-- <a class="logo" href="index.html" aria-label="Smart Solution home"
               style="font-weight:700;color:#fff;text-decoration:none;padding-right:1rem;">Smart<span
@@ -118,7 +132,7 @@ https://templatemo.com/tm-574-mexant
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-
+              <div class="nav-logo"><img src="assets/images/logo.png" height="60px" width="60px" style="padding-right: 400px; padding-bottom: 10px;" alt=""></div>
               <li class="scroll-to-section"><a href="#top" style="font-size: 18px;">Home</a></li>
               <li class="scroll-to-section"><a href="#about" style="font-size: 18px;">About</a></li>
               <li><a href="our-services.html" style="font-size: 18px;">Our Services</a></li>
